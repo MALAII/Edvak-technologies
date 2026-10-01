@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="auto" fill="none">
+  <!-- Background Blueprint Subtle Grid -->
+  <defs>
+    <pattern id="techGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E2E8F0" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1E36"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="tealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="540" height="380" rx="8" fill="#F8FAFC"/>
+  <rect width="540" height="380" rx="8" fill="url(#techGrid)"/>
+
+  <!-- Network Connection Traces -->
+  <g stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+    <!-- Center to Nodes -->
+    <path d="M 270 190 L 120 110" stroke-dasharray="4 4"/>
+    <path d="M 270 190 L 420 110" stroke-dasharray="4 4"/>
+    <path d="M 270 190 L 120 280" stroke-dasharray="4 4"/>
+    <path d="M 270 190 L 420 280" stroke-dasharray="4 4"/>
+    <path d="M 270 190 L 270 65"/>
+    <path d="M 270 190 L 270 315"/>
+  </g>
+
+  <!-- Animated Pulse Rings around Core -->
+  <circle cx="270" cy="190" r="48" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <circle cx="270" cy="190" r="38" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+
+  <!-- Core Enterprise Hub -->
+  <rect x="235" y="160" width="70" height="60" rx="6" fill="url(#primaryGradient)" filter="url(#cardShadow)"/>
+  <text x="270" y="185" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="0.5">IT CORE</text>
+  <text x="270" y="202" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">INFRASTRUCTURE</text>
+
+  <!-- Node 1: Cloud & Data Services (Top Center) -->
+  <g filter="url(#cardShadow)">
+    <rect x="210" y="30" width="120" height="48" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="218" y="42" width="24" height="24" rx="4" fill="#F0F9FF"/>
+    <!-- Cloud Icon -->
+    <path d="M226 57a3.5 3.5 0 0 1-.5-6.9 4.5 4.5 0 0 1 8.5-1.5 3 3 0 0 1 3 3.4 3 3 0 0 1-1 6z" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="250" y="49" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Cloud &amp; Data</text>
+    <text x="250" y="62" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">Hybrid Architecture</text>
+  </g>
+
+  <!-- Node 2: Web & Software Dev (Top Left) -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="80" width="130" height="52" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="48" y="94" width="24" height="24" rx="4" fill="#EFF6FF"/>
+    <!-- Code Brackets Icon -->
+    <path d="M56 102 L 52 106 L 56 110 M 64 102 L 68 106 L 64 110" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="80" y="103" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Web &amp; Software</text>
+    <text x="80" y="116" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">Enterprise Solutions</text>
+  </g>
+
+  <!-- Node 3: Cybersecurity (Top Right) -->
+  <g filter="url(#cardShadow)">
+    <rect x="370" y="80" width="130" height="52" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="378" y="94" width="24" height="24" rx="4" fill="#ECFDF5"/>
+    <!-- Shield Icon -->
+    <path d="M390 98 L 398 95 L 398 106 C 398 111 390 114 390 114 C 390 114 382 111 382 106 L 382 95 Z" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="410" y="103" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Cybersecurity</text>
+    <text x="410" y="116" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">Threat Protection</text>
+  </g>
+
+  <!-- Node 4: Networking & Servers (Bottom Left) -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="248" width="130" height="52" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="48" y="262" width="24" height="24" rx="4" fill="#F1F5F9"/>
+    <!-- Server Stack Icon -->
+    <rect x="52" y="267" width="16" height="4" rx="1" stroke="#334155" stroke-width="1.2"/>
+    <rect x="52" y="274" width="16" height="4" rx="1" stroke="#334155" stroke-width="1.2"/>
+    <circle cx="55" cy="269" r="0.75" fill="#2563EB"/>
+    <circle cx="55" cy="276" r="0.75" fill="#10B981"/>
+    <text x="80" y="271" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Networking &amp; LAN</text>
+    <text x="80" y="284" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">Structured Cabling</text>
+  </g>
+
+  <!-- Node 5: IT Support & Systems (Bottom Right) -->
+  <g filter="url(#cardShadow)">
+    <rect x="370" y="248" width="130" height="52" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="378" y="262" width="24" height="24" rx="4" fill="#FEF3C7"/>
+    <!-- Tools / Support Icon -->
+    <path d="M386 270 L 394 278 M 392 268 L 396 272" stroke="#D97706" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="410" y="271" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Support &amp; AMC</text>
+    <text x="410" y="284" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">System Maintenance</text>
+  </g>
+
+  <!-- Node 6: Monitoring & SLA (Bottom Center) -->
+  <g filter="url(#cardShadow)">
+    <rect x="200" y="306" width="140" height="44" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="218" cy="328" r="5" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="218" cy="328" r="2" fill="#059669"/>
+    <text x="232" y="324" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">24/7 Operations</text>
+    <text x="232" y="336" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">Enterprise SLA &amp; Support</text>
+  </g>
+</svg>

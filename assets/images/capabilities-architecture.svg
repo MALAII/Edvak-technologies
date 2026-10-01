@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="100%" height="auto" fill="none">
+  <defs>
+    <filter id="capShadow" x="-6%" y="-6%" width="112%" height="116%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <linearGradient id="capCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="activeAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Grid Canvas -->
+  <rect x="0" y="0" width="520" height="420" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g stroke="#E2E8F0" stroke-width="0.75" stroke-dasharray="2,4" opacity="0.8">
+    <line x1="30" y1="0" x2="30" y2="420"/>
+    <line x1="150" y1="0" x2="150" y2="420"/>
+    <line x1="260" y1="0" x2="260" y2="420"/>
+    <line x1="370" y1="0" x2="370" y2="420"/>
+    <line x1="490" y1="0" x2="490" y2="420"/>
+    <line x1="0" y1="40" x2="520" y2="40"/>
+    <line x1="0" y1="130" x2="520" y2="130"/>
+    <line x1="0" y1="220" x2="520" y2="220"/>
+    <line x1="0" y1="310" x2="520" y2="310"/>
+    <line x1="0" y1="390" x2="520" y2="390"/>
+  </g>
+
+  <!-- Architecture Header Strip -->
+  <rect x="18" y="16" width="484" height="28" rx="6" fill="#0A192F"/>
+  <circle cx="34" cy="30" r="3" fill="#EF4444"/>
+  <circle cx="44" cy="30" r="3" fill="#F59E0B"/>
+  <circle cx="54" cy="30" r="3" fill="#10B981"/>
+  <text x="70" y="34" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="0.5">TECHNICAL CAPABILITIES FRAMEWORK // SYSTEM INTEGRATION</text>
+  <rect x="424" y="22" width="66" height="16" rx="3" fill="#1E293B"/>
+  <text x="432" y="33" fill="#38BDF8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="700">VERIFIED</text>
+
+  <!-- Left Spine Flow Indicator -->
+  <line x1="48" y1="80" x2="48" y2="375" stroke="#CBD5E1" stroke-width="2"/>
+  <circle cx="48" cy="95" r="5" fill="#2563EB" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="48" cy="180" r="5" fill="#0284C7" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="48" cy="265" r="5" fill="#059669" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="48" cy="350" r="5" fill="#D97706" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- TIER 1: DESIGN & DEVELOPMENT -->
+  <g filter="url(#capShadow)">
+    <rect x="72" y="60" width="428" height="70" rx="8" fill="url(#capCardGrad)" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="72" y="60" width="4" height="70" rx="2" fill="#2563EB"/>
+    <!-- Icon Box -->
+    <rect x="88" y="74" width="40" height="40" rx="6" fill="#EFF6FF" stroke="#DBEAFE" stroke-width="1"/>
+    <path d="M 100 88 L 108 94 L 100 100" stroke="#2563EB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 116 88 L 108 94 L 116 100" stroke="#2563EB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Title & Desc -->
+    <text x="140" y="86" fill="#0A192F" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Design &amp; Development</text>
+    <text x="140" y="102" fill="#64748B" font-family="'Inter', sans-serif" font-size="9">Websites, custom business software, mobile applications &amp; database tools.</text>
+    <!-- Badges -->
+    <rect x="360" y="80" width="56" height="18" rx="3" fill="#EFF6FF"/>
+    <text x="368" y="92" fill="#1D4ED8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Frontend</text>
+    <rect x="422" y="80" width="66" height="18" rx="3" fill="#EFF6FF"/>
+    <text x="430" y="92" fill="#1D4ED8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Backend API</text>
+  </g>
+
+  <!-- TIER 2: INFRASTRUCTURE -->
+  <g filter="url(#capShadow)">
+    <rect x="72" y="145" width="428" height="70" rx="8" fill="url(#capCardGrad)" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="72" y="145" width="4" height="70" rx="2" fill="#0284C7"/>
+    <!-- Icon Box -->
+    <rect x="88" y="159" width="40" height="40" rx="6" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+    <rect x="99" y="172" width="18" height="8" rx="1.5" stroke="#0284C7" stroke-width="1.6" fill="none"/>
+    <rect x="99" y="183" width="18" height="8" rx="1.5" stroke="#0284C7" stroke-width="1.6" fill="none"/>
+    <circle cx="103" cy="176" r="1" fill="#0284C7"/>
+    <circle cx="103" cy="187" r="1" fill="#0284C7"/>
+    <!-- Title & Desc -->
+    <text x="140" y="171" fill="#0A192F" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Infrastructure</text>
+    <text x="140" y="187" fill="#64748B" font-family="'Inter', sans-serif" font-size="9">Structured LAN cabling, rackmount servers, network switches &amp; hardware setup.</text>
+    <!-- Badges -->
+    <rect x="360" y="165" width="58" height="18" rx="3" fill="#F0F9FF"/>
+    <text x="368" y="177" fill="#0369A1" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Gigabit LAN</text>
+    <rect x="424" y="165" width="64" height="18" rx="3" fill="#F0F9FF"/>
+    <text x="432" y="177" fill="#0369A1" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Server Fleet</text>
+  </g>
+
+  <!-- TIER 3: SECURITY & DATA -->
+  <g filter="url(#capShadow)">
+    <rect x="72" y="230" width="428" height="70" rx="8" fill="url(#capCardGrad)" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="72" y="230" width="4" height="70" rx="2" fill="#059669"/>
+    <!-- Icon Box -->
+    <rect x="88" y="244" width="40" height="40" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1"/>
+    <path d="M 108 255 L 118 259 V 266 C 118 272 108 276 108 276 C 108 276 98 272 98 266 V 259 Z" stroke="#059669" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+    <!-- Title & Desc -->
+    <text x="140" y="256" fill="#0A192F" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Security &amp; Data</text>
+    <text x="140" y="272" fill="#64748B" font-family="'Inter', sans-serif" font-size="9">Endpoint cybersecurity, enterprise firewalls, automated backup &amp; disaster recovery.</text>
+    <!-- Badges -->
+    <rect x="360" y="250" width="60" height="18" rx="3" fill="#ECFDF5"/>
+    <text x="368" y="262" fill="#047857" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Protection</text>
+    <rect x="426" y="250" width="62" height="18" rx="3" fill="#ECFDF5"/>
+    <text x="434" y="262" fill="#047857" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Auto Backup</text>
+  </g>
+
+  <!-- TIER 4: MAINTENANCE & SUPPORT -->
+  <g filter="url(#capShadow)">
+    <rect x="72" y="315" width="428" height="70" rx="8" fill="url(#capCardGrad)" stroke="#E2E8F0" stroke-width="1"/>
+    <rect x="72" y="315" width="4" height="70" rx="2" fill="#D97706"/>
+    <!-- Icon Box -->
+    <rect x="88" y="329" width="40" height="40" rx="6" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+    <path d="M 114 340 L 117 343 L 105 355 L 100 355 L 100 350 Z" stroke="#D97706" stroke-width="1.6" fill="none"/>
+    <circle cx="114" cy="342" r="3" stroke="#D97706" stroke-width="1.6" fill="none"/>
+    <!-- Title & Desc -->
+    <text x="140" y="341" fill="#0A192F" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">Maintenance &amp; Support</text>
+    <text x="140" y="357" fill="#64748B" font-family="'Inter', sans-serif" font-size="9">On-site troubleshooting, Annual Maintenance Contracts (AMC) &amp; technical helpdesk.</text>
+    <!-- Badges -->
+    <rect x="360" y="335" width="58" height="18" rx="3" fill="#FFFBEB"/>
+    <text x="368" y="347" fill="#B45309" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">AMC Plans</text>
+    <rect x="424" y="335" width="64" height="18" rx="3" fill="#FFFBEB"/>
+    <text x="432" y="347" fill="#B45309" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">Prompt SLA</text>
+  </g>
+
+  <!-- Bottom Architecture Status Bar -->
+  <g transform="translate(72, 395)">
+    <text x="0" y="11" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600">OPERATIONAL STATUS: READY FOR ENTERPRISE DEPLOYMENT</text>
+    <circle cx="360" cy="8" r="3" fill="#10B981"/>
+    <text x="370" y="11" fill="#64748B" font-family="'Inter', sans-serif" font-size="7.5">ALL TIERS ACTIVE</text>
+  </g>
+</svg>

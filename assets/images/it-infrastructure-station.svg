@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="auto" fill="none">
+  <defs>
+    <!-- Realistic subtle drop shadows and gradients -->
+    <filter id="infraShadow" x="-8%" y="-8%" width="116%" height="120%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.08"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <filter id="consoleGlow" x="-5%" y="-5%" width="110%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#2563EB" flood-opacity="0.12"/>
+    </filter>
+    
+    <linearGradient id="screenBezel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="screenDisplay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1526"/>
+      <stop offset="100%" stop-color="#070D18"/>
+    </linearGradient>
+
+    <linearGradient id="serverChassis" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <linearGradient id="switchFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Backdrop Base Pedestal -->
+  <ellipse cx="270" cy="355" rx="220" ry="18" fill="#F1F5F9" opacity="0.8"/>
+  <ellipse cx="270" cy="353" rx="170" ry="12" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- ==========================================
+       1. SERVER RACK & SWITCH INFRASTRUCTURE UNIT (LOWER DECK)
+       ========================================== -->
+  <g filter="url(#infraShadow)">
+    <!-- Base Cabinet Tray -->
+    <rect x="110" y="275" width="320" height="66" rx="6" fill="url(#serverChassis)" stroke="#475569" stroke-width="1"/>
+
+    <!-- Switch Unit 1 (Upper 1U Network Switch) -->
+    <rect x="116" y="281" width="308" height="26" rx="3" fill="url(#switchFace)" stroke="#0F172A" stroke-width="1"/>
+    
+    <!-- Rack Mount Ears -->
+    <rect x="111" y="283" width="5" height="22" rx="1" fill="#64748B"/>
+    <circle cx="113.5" cy="288" r="1" fill="#0F172A"/>
+    <circle cx="113.5" cy="300" r="1" fill="#0F172A"/>
+    <rect x="424" y="283" width="5" height="22" rx="1" fill="#64748B"/>
+    <circle cx="426.5" cy="288" r="1" fill="#0F172A"/>
+    <circle cx="426.5" cy="300" r="1" fill="#0F172A"/>
+
+    <!-- Switch Ports (RJ-45 Bank) -->
+    <g fill="#020617" stroke="#334155" stroke-width="0.8">
+      <!-- Port Bank 1 -->
+      <rect x="135" y="287" width="9" height="7" rx="1"/>
+      <rect x="147" y="287" width="9" height="7" rx="1"/>
+      <rect x="159" y="287" width="9" height="7" rx="1"/>
+      <rect x="171" y="287" width="9" height="7" rx="1"/>
+      <rect x="183" y="287" width="9" height="7" rx="1"/>
+      <rect x="195" y="287" width="9" height="7" rx="1"/>
+      <rect x="207" y="287" width="9" height="7" rx="1"/>
+      <rect x="219" y="287" width="9" height="7" rx="1"/>
+
+      <!-- Port Bank 2 -->
+      <rect x="240" y="287" width="9" height="7" rx="1"/>
+      <rect x="252" y="287" width="9" height="7" rx="1"/>
+      <rect x="264" y="287" width="9" height="7" rx="1"/>
+      <rect x="276" y="287" width="9" height="7" rx="1"/>
+      <rect x="288" y="287" width="9" height="7" rx="1"/>
+      <rect x="300" y="287" width="9" height="7" rx="1"/>
+    </g>
+
+    <!-- Connected Patch Cables -->
+    <path d="M 151 294 Q 151 310 175 310 Q 199 310 199 294" stroke="#2563EB" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M 163 294 Q 163 318 211 318 Q 259 318 259 294" stroke="#0EA5E9" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M 270 294 Q 270 312 288 312" stroke="#10B981" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- LED Link Status Indicators -->
+    <circle cx="139.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="151.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="163.5" cy="298" r="1" fill="#38BDF8"/>
+    <circle cx="175.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="187.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="199.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="211.5" cy="298" r="1" fill="#38BDF8"/>
+    <circle cx="223.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="244.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="256.5" cy="298" r="1" fill="#10B981"/>
+    <circle cx="268.5" cy="298" r="1" fill="#10B981"/>
+
+    <!-- Unit 2 (Lower Storage & Power Array) -->
+    <rect x="116" y="311" width="308" height="25" rx="3" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    
+    <!-- Drive Bays -->
+    <rect x="135" y="316" width="34" height="15" rx="1.5" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+    <rect x="173" y="316" width="34" height="15" rx="1.5" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+    <rect x="211" y="316" width="34" height="15" rx="1.5" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+    <rect x="249" y="316" width="34" height="15" rx="1.5" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+
+    <!-- Drive Activity LEDs -->
+    <circle cx="140" cy="323.5" r="1" fill="#10B981"/>
+    <circle cx="178" cy="323.5" r="1" fill="#10B981"/>
+    <circle cx="216" cy="323.5" r="1" fill="#10B981"/>
+    <circle cx="254" cy="323.5" r="1" fill="#10B981"/>
+
+    <!-- Console Text on Chassis -->
+    <text x="350" y="296" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" letter-spacing="0.5">GIGABIT SWITCH</text>
+    <text x="350" y="324" fill="#64748B" font-family="'Inter', sans-serif" font-size="6.8">STORAGE ARRAY // RAID-10</text>
+  </g>
+
+  <!-- ==========================================
+       2. WORKSTATION MONITOR & MONITOR STAND
+       ========================================== -->
+  <!-- Monitor Stand Base & Arm -->
+  <g fill="#334155">
+    <path d="M 252 275 L 256 220 L 284 220 L 288 275 Z"/>
+    <rect x="230" y="272" width="80" height="6" rx="2" fill="#1E293B" stroke="#475569" stroke-width="0.8"/>
+  </g>
+
+  <!-- Main Monitor Display Chassis -->
+  <g filter="url(#infraShadow)">
+    <!-- Outer Bezel -->
+    <rect x="90" y="30" width="360" height="205" rx="8" fill="url(#screenBezel)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Screen Surface -->
+    <rect x="98" y="38" width="344" height="189" rx="5" fill="url(#screenDisplay)"/>
+
+    <!-- Window Title Bar -->
+    <rect x="98" y="38" width="344" height="22" rx="5" fill="#0F1E36"/>
+    <!-- Window Controls -->
+    <circle cx="112" cy="49" r="3" fill="#EF4444"/>
+    <circle cx="122" cy="49" r="3" fill="#F59E0B"/>
+    <circle cx="132" cy="49" r="3" fill="#10B981"/>
+
+    <text x="146" y="52" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="600">SYSTEM DIAGNOSTICS // NETWORK OPERATIONS</text>
+    
+    <rect x="365" y="43" width="68" height="12" rx="2" fill="#1E3A5F"/>
+    <circle cx="372" cy="49" r="2" fill="#10B981"/>
+    <text x="378" y="52" fill="#93C5FD" font-family="'Inter', sans-serif" font-size="7" font-weight="600">ALL SYSTEMS OK</text>
+
+    <!-- Left Screen Panel: Live Architecture Topology -->
+    <rect x="110" y="70" width="180" height="145" rx="4" fill="#0B1321" stroke="#1E293B" stroke-width="1"/>
+    <text x="120" y="86" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700">INFRASTRUCTURE TOPOLOGY</text>
+
+    <!-- Topology Nodes & Paths -->
+    <g stroke="#2563EB" stroke-width="1.2" stroke-linecap="round" fill="none">
+      <path d="M 200 115 L 140 155"/>
+      <path d="M 200 115 L 200 165"/>
+      <path d="M 200 115 L 260 155"/>
+    </g>
+
+    <!-- Core Router Node -->
+    <rect x="186" y="102" width="28" height="22" rx="3" fill="#1E293B" stroke="#3B82F6" stroke-width="1.2"/>
+    <rect x="193" y="108" width="14" height="10" rx="1" fill="#2563EB"/>
+    <circle cx="200" cy="113" r="1.5" fill="#FFFFFF"/>
+
+    <!-- Branch Nodes -->
+    <g fill="#0F172A" stroke="#0EA5E9" stroke-width="1">
+      <rect x="126" y="155" width="28" height="20" rx="2"/>
+      <rect x="186" y="165" width="28" height="20" rx="2"/>
+      <rect x="246" y="155" width="28" height="20" rx="2"/>
+    </g>
+    <!-- Icons inside nodes -->
+    <path d="M 135 165 L 145 165 M 140 161 L 140 169" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="193" y="172" width="14" height="5" rx="1" fill="#38BDF8"/>
+    <path d="M 255 163 L 265 167 L 255 171 Z" fill="#38BDF8"/>
+
+    <!-- Metric Bar on Topology -->
+    <text x="120" y="202" fill="#64748B" font-family="'Inter', sans-serif" font-size="7">GATEWAY: 192.168.1.1  •  UPTIME: 99.98%</text>
+
+    <!-- Right Screen Panel: Performance & Metric Cards -->
+    <!-- Card 1: Traffic Load -->
+    <rect x="300" y="70" width="130" height="42" rx="4" fill="#0B1321" stroke="#1E293B" stroke-width="1"/>
+    <text x="310" y="83" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600">THROUGHPUT</text>
+    <text x="310" y="99" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800">1.24 GB/s</text>
+    <!-- Mini Sparkline -->
+    <path d="M 375 98 L 385 92 L 395 95 L 405 85 L 415 89 L 422 81" fill="none" stroke="#10B981" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Card 2: Security & Firewall -->
+    <rect x="300" y="118" width="130" height="42" rx="4" fill="#0B1321" stroke="#1E293B" stroke-width="1"/>
+    <text x="310" y="131" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600">FIREWALL FILTER</text>
+    <text x="310" y="147" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">ACTIVE</text>
+    <rect x="380" y="135" width="40" height="12" rx="2" fill="#14532D"/>
+    <text x="388" y="144" fill="#4ADE80" font-family="'Inter', sans-serif" font-size="6.5" font-weight="700">PROTECTED</text>
+
+    <!-- Card 3: Storage Health -->
+    <rect x="300" y="166" width="130" height="49" rx="4" fill="#0B1321" stroke="#1E293B" stroke-width="1"/>
+    <text x="310" y="179" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600">SERVER STORAGE</text>
+    <!-- Progress Bar -->
+    <rect x="310" y="186" width="110" height="5" rx="2" fill="#1E293B"/>
+    <rect x="310" y="186" width="65" height="5" rx="2" fill="#3B82F6"/>
+    <text x="310" y="204" fill="#64748B" font-family="'Inter', sans-serif" font-size="6.8">14.2 TB / 32 TB ALLOCATED</text>
+  </g>
+</svg>

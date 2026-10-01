@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Edvak Technologies Pvt Ltd</title>
+  <meta name="description" content="Explore technical solutions and infrastructure services across our five business divisions: Electronics, Telecom, Electrical, PVC & Plumbing, and IT Services.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "Edvak Technologies Pvt Ltd",
+      "url": "https://www.example.com/"
+    },
+    "name": "Technical & Infrastructure Solutions",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Business Divisions",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electronics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Telecom" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electrical" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PVC & Plumbing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT Services" } }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Global Header -->
+  <header class="site-header" id="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Edvak Technologies Pvt Ltd Home">
+        <img src="assets/images/edvak-mark.png" alt="Edvak Technologies Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Edvak Technologies</span>
+          <span class="brand-subtitle">Technical &amp; Infrastructure Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Wrapper -->
+      <div class="nav-menu-wrapper" id="primary-navigation-wrapper">
+        <nav aria-label="Primary Website Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link active" aria-current="page">Services</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li class="mobile-drawer-cta" style="display:none;">
+              <a href="contact.html" class="btn btn-primary btn-block btn-shimmer">Request a Service</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-nav-cta">
+          Request a Service
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation-wrapper">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <ul class="breadcrumb" aria-label="Breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-separator">/</li>
+          <li aria-current="page">Services</li>
+        </ul>
+        <h1>Our Business Divisions &amp; Services</h1>
+        <p>
+          Explore our structured services and technical solutions across Electronics, Telecom, Electrical, PVC &amp; Plumbing, and IT Services.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES CATALOG & FILTER CATEGORIES -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Tabs & Real-Time Search -->
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1.25rem; margin-bottom: 2.5rem;">
+          <div class="services-filter-nav" role="tablist" aria-label="Business Division Filters" style="margin-bottom:0;">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Divisions</button>
+            <button class="filter-btn" data-filter="electronics" role="tab" aria-selected="false">01 — Electronics</button>
+            <button class="filter-btn" data-filter="telecom" role="tab" aria-selected="false">02 — Telecom</button>
+            <button class="filter-btn" data-filter="electrical" role="tab" aria-selected="false">03 — Electrical</button>
+            <button class="filter-btn" data-filter="plumbing" role="tab" aria-selected="false">04 — PVC &amp; Plumbing</button>
+            <button class="filter-btn" data-filter="it" role="tab" aria-selected="false">05 — IT Sector</button>
+          </div>
+
+          <!-- Quick Search -->
+          <div style="min-width: 260px; max-width: 320px; width:100%;">
+            <input type="text" id="service-search" class="form-control" placeholder="Search services..." aria-label="Search services by keyword">
+          </div>
+        </div>
+
+        <div id="no-services-message" style="display:none; padding: 2.5rem; text-align: center; background-color: var(--color-bg-surface); border-radius: var(--radius-md); border: 1px dashed var(--color-border); margin-bottom: 2rem;">
+          <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">No matching services found</h3>
+          <p style="margin: 0; color: var(--color-text-muted);">Please try a different search keyword or switch to "All Divisions".</p>
+        </div>
+
+        <!-- ==========================================
+             01 — ELECTRONICS
+             ========================================== -->
+        <div class="services-category-block" data-group="electronics" id="division-electronics">
+          <div class="category-group-header">
+            <div>
+              <h2>
+                <span class="group-num">01 —</span>
+                ELECTRONICS
+              </h2>
+              <p>CCTV surveillance, home appliances, electrical equipment technicians, solar panels, LED panels, and lighting systems.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- 01. CCTV -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 01</span>
+                  <h3 class="service-detail-title">CCTV</h3>
+                  <p class="service-detail-intro">Complete CCTV surveillance setup, camera installation, cabling, DVR/NVR configuration, and monitoring.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">CCTV Camera Installation</li>
+                  <li class="service-scope-item">DVR &amp; NVR Setup</li>
+                  <li class="service-scope-item">Surveillance Maintenance</li>
+                  <li class="service-scope-item">Security Monitoring Systems</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=cctv&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 02. Home Appliances -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16.01" y2="14"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 02</span>
+                  <h3 class="service-detail-title">Home Appliances</h3>
+                  <p class="service-detail-intro">Professional servicing, installation, and technical maintenance for domestic and commercial home appliances.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Appliance Installation</li>
+                  <li class="service-scope-item">Maintenance &amp; Servicing</li>
+                  <li class="service-scope-item">Diagnostic Troubleshooting</li>
+                  <li class="service-scope-item">Equipment Upkeep</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=home-appliances&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 03. Electrical Equipment Technicians -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 03</span>
+                  <h3 class="service-detail-title">Electrical Equipment Technicians</h3>
+                  <p class="service-detail-intro">Experienced, certified technicians available for all electrical machinery, panels, and equipment repairs.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Certified Field Technicians</li>
+                  <li class="service-scope-item">Equipment Troubleshooting</li>
+                  <li class="service-scope-item">On-Site Servicing &amp; Repair</li>
+                  <li class="service-scope-item">Routine Equipment Inspection</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=technicians&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 04. Solar Panels -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 04</span>
+                  <h3 class="service-detail-title">Solar Panels</h3>
+                  <p class="service-detail-intro">Rooftop and ground-mount solar panel installations, inverter cabling, maintenance, and solar power configurations.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Solar Panel Installation</li>
+                  <li class="service-scope-item">Rooftop Array Mounting</li>
+                  <li class="service-scope-item">Inverter &amp; Power Integration</li>
+                  <li class="service-scope-item">Solar Panel Cleaning &amp; Servicing</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=solar-panels&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 05. LED Panels -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 05</span>
+                  <h3 class="service-detail-title">LED Panels</h3>
+                  <p class="service-detail-intro">Commercial and architectural LED display panels, video walls, and digital display board installations.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">LED Display Installation</li>
+                  <li class="service-scope-item">Video Wall Mounting</li>
+                  <li class="service-scope-item">Panel Maintenance &amp; Testing</li>
+                  <li class="service-scope-item">Display Module Replacement</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=led-panels&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 06. Lighting Panels -->
+            <article class="service-detail-card" data-category="electronics">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRONICS 06</span>
+                  <h3 class="service-detail-title">Lighting Panels</h3>
+                  <p class="service-detail-intro">Industrial and commercial lighting distribution panels, automated lighting controllers, and fixtures.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Lighting Control Panels</li>
+                  <li class="service-scope-item">Distribution Board Setup</li>
+                  <li class="service-scope-item">Commercial Lighting Fixtures</li>
+                  <li class="service-scope-item">Panel Maintenance</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=lighting-panels&division=electronics" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             02 — TELECOM
+             ========================================== -->
+        <div class="services-category-block" data-group="telecom" id="division-telecom">
+          <div class="category-group-header">
+            <div>
+              <h2>
+                <span class="group-num">02 —</span>
+                TELECOM
+              </h2>
+              <p>Broadband installation, communication tower erection and maintenance, OFC networking, and repair services.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- 01. Broadband Installation -->
+            <article class="service-detail-card" data-category="telecom">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">TELECOM 01</span>
+                  <h3 class="service-detail-title">Broadband Installation</h3>
+                  <p class="service-detail-intro">High-speed commercial and enterprise broadband connectivity setup, modem configurations, and client provisioning.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Broadband Line Setup</li>
+                  <li class="service-scope-item">Modem &amp; CPE Configuration</li>
+                  <li class="service-scope-item">Speed &amp; Latency Testing</li>
+                  <li class="service-scope-item">Enterprise Connectivity</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=broadband-installation&division=telecom" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 02. Tower Erection -->
+            <article class="service-detail-card" data-category="telecom">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.93 4.93a10 10 0 0 1 14.14 0"></path><path d="M7.76 7.76a6 6 0 0 1 8.48 0"></path><circle cx="12" cy="12" r="2"></circle><path d="M12 14v8"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">TELECOM 02</span>
+                  <h3 class="service-detail-title">Tower Erection</h3>
+                  <p class="service-detail-intro">Structural telecommunication tower erection, guyed mast assembly, site groundwork, and secure tower installation.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Telecom Tower Assembly</li>
+                  <li class="service-scope-item">Foundation &amp; Site Groundwork</li>
+                  <li class="service-scope-item">Mast Erection</li>
+                  <li class="service-scope-item">Structural Safety Compliance</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=tower-erection&division=telecom" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 03. Tower Maintenance -->
+            <article class="service-detail-card" data-category="telecom">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">TELECOM 03</span>
+                  <h3 class="service-detail-title">Tower Maintenance</h3>
+                  <p class="service-detail-intro">Scheduled inspections, structural integrity audits, weatherproofing, bolt tightening, and ongoing upkeep.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Structural Health Audits</li>
+                  <li class="service-scope-item">Corrosion Protection &amp; Paint</li>
+                  <li class="service-scope-item">Fastener &amp; Guy Wire Checks</li>
+                  <li class="service-scope-item">Preventive Maintenance</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=tower-maintenance&division=telecom" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 04. OFC -->
+            <article class="service-detail-card" data-category="telecom">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <div>
+                  <span class="service-number">TELECOM 04</span>
+                  <h3 class="service-detail-title">OFC</h3>
+                  <p class="service-detail-intro">Optical Fiber Cable laying, underground trenching, precision splicing, termination, and OTDR testing.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Optical Fiber Cable Laying</li>
+                  <li class="service-scope-item">Fusion Splicing &amp; Termination</li>
+                  <li class="service-scope-item">OTDR Network Testing</li>
+                  <li class="service-scope-item">Fiber Patching &amp; Joint Closures</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=ofc&division=telecom" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 05. Repairs -->
+            <article class="service-detail-card" data-category="telecom">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">TELECOM 05</span>
+                  <h3 class="service-detail-title">Repairs</h3>
+                  <p class="service-detail-intro">Prompt on-site telecom equipment repairs, cable cut restoration, and emergency infrastructure troubleshooting.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Cable Cut Restoration</li>
+                  <li class="service-scope-item">Signal Failure Troubleshooting</li>
+                  <li class="service-scope-item">Equipment Replacement</li>
+                  <li class="service-scope-item">On-Site Emergency Repairs</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=telecom-repairs&division=telecom" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             03 — ELECTRICAL
+             ========================================== -->
+        <div class="services-category-block" data-group="electrical" id="division-electrical">
+          <div class="category-group-header">
+            <div>
+              <h2>
+                <span class="group-num">03 —</span>
+                ELECTRICAL
+              </h2>
+              <p>Wires, transmission poles, electrical equipment supplies, and certified electrical contracting services.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- 01. Wires -->
+            <article class="service-detail-card" data-category="electrical">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v12"></path><path d="M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path><path d="M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path><path d="M18 9v12"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRICAL 01</span>
+                  <h3 class="service-detail-title">Wires</h3>
+                  <p class="service-detail-intro">Commercial and industrial-grade electrical wires, multi-strand copper cables, armored wires, and accessories.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Industrial Cable Supply</li>
+                  <li class="service-scope-item">Copper &amp; Aluminum Wiring</li>
+                  <li class="service-scope-item">Armored Power Cables</li>
+                  <li class="service-scope-item">Wiring Specifications &amp; Sizing</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=wires&division=electrical" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 02. Poles -->
+            <article class="service-detail-card" data-category="electrical">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"></line><line x1="8" y1="6" x2="16" y2="6"></line><line x1="6" y1="12" x2="18" y2="12"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRICAL 02</span>
+                  <h3 class="service-detail-title">Poles</h3>
+                  <p class="service-detail-intro">Utility pole supply, transmission line poles, street lighting poles, high-mast poles, and erection.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Transmission Line Poles</li>
+                  <li class="service-scope-item">Street Lighting Poles</li>
+                  <li class="service-scope-item">Pole Foundation &amp; Erection</li>
+                  <li class="service-scope-item">Mounting Hardware &amp; Brackets</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=poles&division=electrical" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 03. Electrical Equipment -->
+            <article class="service-detail-card" data-category="electrical">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRICAL 03</span>
+                  <h3 class="service-detail-title">Electrical Equipment</h3>
+                  <p class="service-detail-intro">Supply and deployment of transformers, switchgears, control panels, circuit breakers, and industrial electrical apparatus.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Switchgear &amp; Breakers</li>
+                  <li class="service-scope-item">Distribution Transformers</li>
+                  <li class="service-scope-item">Motor Control Panels</li>
+                  <li class="service-scope-item">Industrial Electrical Apparatus</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=electrical-equipment&division=electrical" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 04. Electrical Contractors -->
+            <article class="service-detail-card" data-category="electrical">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">ELECTRICAL 04</span>
+                  <h3 class="service-detail-title">Electrical Contractors</h3>
+                  <p class="service-detail-intro">Certified electrical contracting for commercial facilities, factories, industrial plants, and residential projects.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Commercial Electrical Contracting</li>
+                  <li class="service-scope-item">Industrial Plant Electrification</li>
+                  <li class="service-scope-item">Load Assessment &amp; Wiring</li>
+                  <li class="service-scope-item">Substation &amp; Panel Execution</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=electrical-contractors&division=electrical" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             04 — PVC & PLUMBING
+             ========================================== -->
+        <div class="services-category-block" data-group="plumbing" id="division-plumbing">
+          <div class="category-group-header">
+            <div>
+              <h2>
+                <span class="group-num">04 —</span>
+                PVC &amp; PLUMBING
+              </h2>
+              <p>PVC manufacturing, plumbing component manufacturing, certified PVC contractors, and professional plumbing contracting.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- 01. PVC Manufacturers -->
+            <article class="service-detail-card" data-category="plumbing">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">PVC &amp; PLUMBING 01</span>
+                  <h3 class="service-detail-title">PVC Manufacturers</h3>
+                  <p class="service-detail-intro">Direct manufacturing and supply of rigid PVC pipes, conduit piping, drainage lines, and polymer fittings.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Rigid PVC Pipes</li>
+                  <li class="service-scope-item">Conduit &amp; Electrical Piping</li>
+                  <li class="service-scope-item">Drainage &amp; Sewerage Fittings</li>
+                  <li class="service-scope-item">Bulk Supply for Infrastructure</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=pvc-manufacturers&division=plumbing" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 02. Plumbing Manufacturers -->
+            <article class="service-detail-card" data-category="plumbing">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">PVC &amp; PLUMBING 02</span>
+                  <h3 class="service-detail-title">Plumbing Manufacturers</h3>
+                  <p class="service-detail-intro">Manufacturing of industrial and commercial plumbing components, valves, connectors, and water distribution hardware.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Plumbing Valves &amp; Couplings</li>
+                  <li class="service-scope-item">Water Distribution Hardware</li>
+                  <li class="service-scope-item">Industrial Pipe Connectors</li>
+                  <li class="service-scope-item">Quality Precision Manufacturing</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=plumbing-manufacturers&division=plumbing" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 03. PVC Contractors -->
+            <article class="service-detail-card" data-category="plumbing">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                </div>
+                <div>
+                  <span class="service-number">PVC &amp; PLUMBING 03</span>
+                  <h3 class="service-detail-title">PVC Contractors</h3>
+                  <p class="service-detail-intro">Contracting services for underground PVC piping networks, commercial conduit lines, and irrigation systems.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Underground PVC Piping</li>
+                  <li class="service-scope-item">Conduit Network Laying</li>
+                  <li class="service-scope-item">Industrial Drainage Piping</li>
+                  <li class="service-scope-item">Agricultural Irrigation Lines</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=pvc-contractors&division=plumbing" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+
+            <!-- 04. Plumbing Contractors -->
+            <article class="service-detail-card" data-category="plumbing">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">PVC &amp; PLUMBING 04</span>
+                  <h3 class="service-detail-title">Plumbing Contractors</h3>
+                  <p class="service-detail-intro">Commercial and residential plumbing contracting, sanitary networks, water treatment piping, and maintenance.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">Commercial Plumbing Projects</li>
+                  <li class="service-scope-item">Sanitary &amp; Drainage Contracting</li>
+                  <li class="service-scope-item">Water Supply System Piping</li>
+                  <li class="service-scope-item">Maintenance &amp; Inspection</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=plumbing-contractors&division=plumbing" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             05 — IT SECTOR
+             ========================================== -->
+        <div class="services-category-block" data-group="it" id="division-it">
+          <div class="category-group-header">
+            <div>
+              <h2>
+                <span class="group-num">05 —</span>
+                IT SECTOR
+              </h2>
+              <p>Professional information technology services supporting operational workflows and business infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <!-- 01. IT Services -->
+            <article class="service-detail-card" data-category="it">
+              <div class="service-detail-header">
+                <div class="service-icon-box" aria-hidden="true" style="background:#0066FF; color:#FFFFFF; border-color:#0066FF;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <span class="service-number">IT SECTOR 01</span>
+                  <h3 class="service-detail-title">IT Services</h3>
+                  <p class="service-detail-intro">Comprehensive information technology services engineered to support enterprise workflows, technical infrastructure, and system reliability.</p>
+                </div>
+              </div>
+              <div class="service-scope">
+                <span class="service-scope-label">Services:</span>
+                <ul class="service-scope-list">
+                  <li class="service-scope-item">IT Technical Services</li>
+                  <li class="service-scope-item">Infrastructure Assistance</li>
+                  <li class="service-scope-item">System Operations Support</li>
+                  <li class="service-scope-item">Technology Implementation</li>
+                </ul>
+              </div>
+              <div class="service-detail-footer">
+                <a href="contact.html?service=it-services&division=it" class="btn btn-primary btn-sm">Enquire Service <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICE CTA -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Need a Specialized Service?</h2>
+          <p>
+            Contact our engineering and technical team with your project requirements across any of our five divisions.
+          </p>
+          <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+            <a href="contact.html" class="btn btn-primary btn-lg btn-shimmer">
+              Request a Service
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/edvak-logo-dark.png" alt="Edvak Technologies Pvt Ltd" class="footer-logo-img">
+          </div>
+          <p>
+            Edvak Technologies Pvt Ltd delivers dependable engineering, technical infrastructure, and contracting services across five specialized divisions: Electronics, Telecom, Electrical, PVC &amp; Plumbing, and comprehensive IT Services.
+          </p>
+          <div class="footer-divisions-summary">
+            <strong>Business Divisions:</strong> Electronics • Telecom • Electrical • PVC &amp; Plumbing • IT Services
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#division-electronics">Electronics</a></li>
+            <li><a href="services.html#division-telecom">Telecom</a></li>
+            <li><a href="services.html#division-electrical">Electrical</a></li>
+            <li><a href="services.html#division-plumbing">PVC &amp; Plumbing</a></li>
+            <li><a href="services.html#division-it">IT Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 XXXXX XXXXX</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Regional Operations, India</span>
+            </li>
+          </ul>
+          <div class="footer-cta-wrap">
+            <a href="contact.html" class="btn btn-secondary btn-footer-cta">Enquire Online</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Edvak Technologies Pvt Ltd. All Rights Reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Request Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
