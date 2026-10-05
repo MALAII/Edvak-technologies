@@ -2965,16 +2965,16 @@ textarea.form-control {
 
 /* Vertical alignment of column header slot across all 4 columns */
 .footer-logo-wrap {
-  height: 44px;
+  height: 54px;
   display: flex;
   align-items: center;
   margin-bottom: 1.25rem;
 }
 
 .footer-logo-img {
-  height: 44px;
+  height: 54px;
   width: auto;
-  max-width: 180px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
   margin: 0 0 1.25rem 0;
